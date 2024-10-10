@@ -2,16 +2,48 @@ package classe;
 
 public class Camisa {
 
-    public String cordacamisa ;
-    public String tamanho;
-    public boolean manga;
-    public String marca;
+    private String tamanho;
+    private String cordacamisa ;
+    private boolean manga;
+    private String marca;
 
-    public void usando() {
-        System.out.println("Estou usando");
+    public Camisa(String tamanho, String cordacamisa, String marca, boolean manga) {
+        this.marca = marca;
+        this.cordacamisa = cordacamisa;
+        this.manga = manga;
+        this.tamanho = tamanho;
     }
-    public void vestindo(){
-        System.out.println("Estou vestindo");
+    
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public String getCordacamisa() {
+        return cordacamisa;
+    }
+
+    public void setCordacamisa(String cordacamisa) {
+        this.cordacamisa = cordacamisa;
+    }
+
+    public boolean isManga() {
+        return manga;
+    }
+
+    public void setManga(boolean manga) {
+        this.manga = manga;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     @Override
